@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if site.posts.size > 0 -%}
+    <div class="post-list row">
+      {%- for post in site.posts -%}
+      <div class="col-12">
+        {%- assign date_format = "%B %-d, %Y" -%}
+        <h3 class="text-center">
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        <h4 class="post-meta text-center">
+          {{ post.date | date: date_format }} 
+          {%- if post.categories -%} 
+             | 
+            {%- for category in post.categories -%}
+              <a href="{{ "/categories/" | relative_url }}{{ category | slugify }}">{{ category }}</a>
+              {%- if forloop.last == false -%}, {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+        </h4>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+          <a class="btn btn-primary" href="{{ post.url | relative_url }}">
+            Continue Reading
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </a>
+        {%- endif -%}
+        {%- if forloop.last == false -%}<hr />{%- endif -%}
+      </div>
+      {%- endfor -%}
+    </div>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>

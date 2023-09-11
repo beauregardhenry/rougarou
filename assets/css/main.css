@@ -1,0 +1,13 @@
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
+
+h1 {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+header h2 {
+    font-family: 'Merriweather', serif !important;
+}
+
+.header {
+    background-color: gray;
+}
