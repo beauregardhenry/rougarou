@@ -18,7 +18,7 @@ layout: default
           {%- if post.categories -%} 
              | 
             {%- for category in post.categories -%}
-              <a href="{{ "/categories/" | relative_url }}{{ category | slugify }}">{{ category }}</a>
+              <a class="category-link" href="{{ "/categories/" | relative_url }}{{ category | slugify }}">{{ category }}</a>
               {%- if forloop.last == false -%}, {%- endif -%}
             {%- endfor -%}
           {%- endif -%}
@@ -36,8 +36,6 @@ layout: default
       </div>
       {%- endfor -%}
     </div>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
 
 </div>
