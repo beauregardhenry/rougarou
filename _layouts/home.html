@@ -26,7 +26,9 @@ layout: default
           {%- endif -%}
         </div>
         {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+          <span class="excerpt">
+            {{ post.excerpt }}
+          </span>
           <a class="btn btn-primary" href="{{ post.url | relative_url }}">
             Continue reading
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">

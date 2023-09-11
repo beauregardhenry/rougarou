@@ -32,3 +32,15 @@ header h2 {
     color: black;
     text-decoration: none;
 }
+
+.post-link {
+    font-family: "Open Sans", sans-serif !important;
+}
+
+.post-meta {
+    font-family: 'Merriweather', serif !important;
+}
+
+.excerpt {
+    font-family: "Inconsolata", monospace !important;
+}
