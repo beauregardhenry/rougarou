@@ -13,16 +13,18 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h3>
-        <h4 class="post-meta text-center">
-          {{ post.date | date: date_format }} 
+        <div class="post-meta text-center">
+          <span>{{ post.date | date: date_format }}</span>
           {%- if post.categories -%} 
-             | 
+            <span> | </span>
             {%- for category in post.categories -%}
               <a class="category-link" href="{{ "/categories/" | relative_url }}{{ category | slugify }}">{{ category }}</a>
-              {%- if forloop.last == false -%}, {%- endif -%}
+              {%- if forloop.last == false -%}
+                <span>, </span>
+              {%- endif -%}
             {%- endfor -%}
           {%- endif -%}
-        </h4>
+        </div>
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
           <a class="btn btn-primary" href="{{ post.url | relative_url }}">
