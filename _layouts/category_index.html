@@ -2,33 +2,40 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if site.posts.size > 0 -%}
-    <div class="post-list row">
-      {%- for post in site.posts -%}
-      <div class="col-12">
+<div class="container">
+  <div class="row">
+    <div class="col-12 border-bottom pb-4 pt-5">
+      <header class="text-center">
+        <p>{{page.category}}</p>
+      </header>
+    </div>
+  </div>
+  {%- if page.posts.size > 0 -%}
+    <div class="row">
+      {%- for post in page.posts -%}
+      <div class="col-12 {% if forloop.first == false %}border-top mt-5{% endif %} pt-5">
         {%- assign date_format = "%B %-d, %Y" -%}
         <h3 class="text-center">
-          <a class="post-link" href="{{ post.url | relative_url }}">
+          <a href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </h3>
-        <div class="post-meta text-center">
+        <h4 class="text-center text-body-secondary pt-1">
           <span>{{ post.date | date: date_format | upcase }}</span>
           {%- if post.categories -%} 
             <span> | </span>
             {%- for category in post.categories -%}
-              <a class="category-link" href="{{ "/categories/" | relative_url }}{{ category | slugify }}">{{ category | upcase }}</a>
+              <a class="text-body-secondary" href="{{ "/categories/" | relative_url }}{{ category | slugify }}">{{ category | upcase }}</a>
               {%- if forloop.last == false -%}
                 <span>, </span>
               {%- endif -%}
             {%- endfor -%}
           {%- endif -%}
-        </div>
+        </h4>
         {%- if site.show_excerpts -%}
-          <span class="excerpt">
+          <p>
             {{ post.excerpt }}
-          </span>
+          </p>
           <a class="btn btn-primary" href="{{ post.url | relative_url }}">
             Continue reading
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -36,10 +43,8 @@ layout: default
             </svg>
           </a>
         {%- endif -%}
-        {%- if forloop.last == false -%}<hr />{%- endif -%}
       </div>
       {%- endfor -%}
     </div>
   {%- endif -%}
-
 </div>

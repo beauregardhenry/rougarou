@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 border-bottom pb-4 pt-5">
+      <header class="text-center">
+        <p>{{page.author}}</p>
+        <img src="{{ page.photo | relative_url }}" class="rounded-circle" style="width: 150px;"
+        alt="Avatar" />
+      </header>
+    </div>
+  </div>
+  {% assign author_posts = site.posts | where: "author", page.author %}
+  {%- if author_posts.size > 0 -%}
+    <div class="row">
+      {%- for post in author_posts -%}
+      <div class="col-12 {% if forloop.first == false %}border-top mt-5{% endif %} pt-5">
+        {%- assign date_format = "%B %-d, %Y" -%}
+        <h3 class="text-center">
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        <h4 class="text-center text-body-secondary pt-1">
+          <span>{{ post.date | date: date_format | upcase }}</span>
+          {%- if post.categories -%} 
+            <span> | </span>
+            {%- for category in post.categories -%}
+              <a class="text-body-secondary" href="{{ "/categories/" | relative_url }}{{ category | slugify }}">{{ category | upcase }}</a>
+              {%- if forloop.last == false -%}
+                <span>, </span>
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+        </h4>
+        {%- if site.show_excerpts -%}
+          <p>
+            {{ post.excerpt }}
+          </p>
+          <a class="btn btn-primary" href="{{ post.url | relative_url }}">
+            Continue reading
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </a>
+        {%- endif -%}
+      </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</div>
