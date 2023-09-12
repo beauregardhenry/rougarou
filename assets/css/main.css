@@ -74,3 +74,8 @@ a:hover {
 .btn-primary:hover {
     border-color: black;
 }
+
+blockquote {
+    border-left: 6px solid #999;
+    padding-left: 1.5em;
+}
