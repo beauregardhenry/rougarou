@@ -79,3 +79,8 @@ blockquote {
     border-left: 6px solid #999;
     padding-left: 1.5em;
 }
+
+.post-content a {
+    text-decoration: underline;
+    color: darkgreen;
+}
