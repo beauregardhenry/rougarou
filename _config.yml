@@ -26,6 +26,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# permalink - https://github.com/field-theory/jekyll-category-pages#installation-and-setup
+permalink: /:year/:month/:day/:title
+# paginate: 8
 
 show_excerpts: true # set to false to remove excerpts on the homepage
 # Build settings
@@ -33,7 +36,7 @@ show_excerpts: true # set to false to remove excerpts on the homepage
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
+  - jekyll-category-pages
 
 # Exclude from processing.
 # The following items will not be processed, by default.

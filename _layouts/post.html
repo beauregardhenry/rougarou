@@ -1,27 +1,50 @@
----
-layout: default
----
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {%- include head.html -%}
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
-  </header>
+  <body>
+    <div class="container-fluid primary-bg-color py-4 mb-3">
+      <div class="container pt-5">
+        <header class="text-center">
+          <h1>
+            {{ page.title | escape }}
+          </h1>
+          <h2 class="text-body-secondary">
+            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              {{ page.date | date: date_format }}
+            </time>
+            {%- if page.author -%}
+              • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+            {%- endif -%}</p>
+          </h2>
+          <h2 class="text-body-secondary">
+            <a href="{{ "/" | relative_url }}">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+              </svg>
+              Back to all Posts
+            </a>
+          </h2>
+        </header>
+      </div>
+    </div>    
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+    <div class="container post-content">
+      {{ content }}
+    </div>
+    
+    
+    <div class="container-fluid my-5">
+      <div class="container border-top">
+        <footer class="py-2 my-2">
+          <p class="text-left text-body-secondary">
+            © 2023 Company, Inc | subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    {%- include bootstrap-js.html -%}
+  </body>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+</html>
