@@ -1,7 +1,16 @@
 @import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
 
+@font-face {
+    font-family: retail;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: normal;
+    src: url('/fonts/ohno/retail/Retail/RetailDemo-Bold.otf') format('opentype');
+}
+
 h1 {
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: retail, !important;
+    /* font-family: 'Open Sans', sans-serif !important; */
 }
 
 header h2 {
