@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 @font-face {
-    font-family: retail;
+    font-family: 'retail';
     font-style: normal;
     font-weight: bold;
     font-stretch: normal;
@@ -23,7 +23,7 @@
 }
 
 header h1 {
-    font-family: retail, !important;
+    font-family: 'retail', !important;
     /* font-weight: 700; */
     font-size: 3rem;
     text-transform: uppercase;
