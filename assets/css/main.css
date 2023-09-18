@@ -23,7 +23,7 @@
 }
 
 header h1 {
-    font-family: retail, sans-serif !important;
+    font-family: retail, !important;
     /* font-weight: 700; */
     font-size: 3rem;
     text-transform: uppercase;
