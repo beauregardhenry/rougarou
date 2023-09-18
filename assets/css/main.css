@@ -6,10 +6,11 @@
 @font-face {
     font-family: 'retail';
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-stretch: normal;
-    src: url('/assets/fonts/ohno/retail/Retail/RetailDemo-Bold.otf') format('opentype');
+    src: url('../assets/fonts/ohno/retail/Retail/RetailDemo-Bold.otf') format('opentype');
 }
+
 .container {
     max-width: 940px;
 }
@@ -24,7 +25,7 @@
 
 header h1 {
     font-family: 'retail', !important;
-    /* font-weight: 700; */
+    font-weight: 700;
     font-size: 3rem;
     text-transform: uppercase;
 }
