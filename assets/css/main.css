@@ -3,6 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:400,300,700");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+@font-face {
+    font-family: retail;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: normal;
+    src: url('/assets/fonts/ohno/retail/Retail/RetailDemo-Bold.otf') format('opentype');
+}
 .container {
     max-width: 940px;
 }
@@ -16,8 +23,8 @@
 }
 
 header h1 {
-    font-family: 'Open Sans', sans-serif !important;
-    font-weight: 700;
+    font-family: retail, sans-serif !important;
+    /* font-weight: 700; */
     font-size: 3rem;
     text-transform: uppercase;
 }
