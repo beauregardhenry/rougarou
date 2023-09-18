@@ -1,12 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:400,300,700");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:400,300,700");
-@import url("../fonts/merriweather/Merriweather-Light.ttf");
-@import url("../fonts/merriweather/Merriweather-Regular.ttf");
-@import url("../fonts/merriweather/Merriweather-Bold.ttf");
-@import url("../fonts/inconsolata/Inconsolata-VariableFont.ttf");
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
-
-@import url('/assets/fonts/ohno/retail/Retail/RetailDemo-Bold.otf');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700");
 
 .container {
     max-width: 940px;
