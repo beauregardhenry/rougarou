@@ -1,15 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:400,300,700");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:400,300,700");
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:400,300,700");
+/* @import url("https://fonts.googleapis.com/css2?family=Inconsolata:400,300,700"); */
+@import url("../fonts/inconsolata/Inconsolata-VariableFont.ttf");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+@import url('/assets/fonts/ohno/retail/Retail/RetailDemo-Bold.otf');
+
+/* 
 @font-face {
-    font-family: 'retail';
+    font-family: "retail";
     font-style: normal;
     font-weight: 700;
     font-stretch: normal;
-    src: url('../assets/fonts/ohno/retail/Retail/RetailDemo-Bold.otf') format('opentype');
+    src: url('../fonts/ohno/retail/Retail/RetailDemo-Bold.otf') format('opentype');
 }
+*/
 
 .container {
     max-width: 940px;
@@ -24,7 +29,7 @@
 }
 
 header h1 {
-    font-family: 'retail', !important;
+    font-family: "retail", sans-serif !important;
     font-weight: 700;
     font-size: 3rem;
     text-transform: uppercase;
