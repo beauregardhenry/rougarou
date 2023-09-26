@@ -3,7 +3,7 @@ layout: post
 title: "GL-iNet Beryl (GL-MT1300) Travel Router Review"
 description: gl-inet travel router beryl gl-mt1300 overview privacy setup vpn wireguard open source
 author: Beau Henry
-date: 2023-09-25
+date: 2023-09-25 21:15:34 -0500
 categories: travel privacy
 ---
 ## Outline
