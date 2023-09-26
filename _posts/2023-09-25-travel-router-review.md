@@ -6,14 +6,12 @@ author: Beau Henry
 date: 2023-09-25 21:15:34 -0500
 categories: travel privacy
 ---
-## Outline
-
-What we want:
-* connect devices to internet securely through unsecure access points
-* powered by laptop
-* small form factor
-* affordable
-* integrated VPN
+What We Want:
+- connect devices to internet securely through unsecure access points
+- powered by laptop
+- small form factor
+- affordable
+- integrated VPN
 
 What We Want To Do:
 * Own our data. ISP should be a simple pipe, but bad actors monitor what I do, what YOU do, what WE ALL do to a significant extent
