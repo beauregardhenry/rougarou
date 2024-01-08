@@ -7,7 +7,7 @@ date:   2024-01-08 15:36:57 -0500
 categories: war privacy how-to
 ---
 
-### Getting Your Shit Together with Cloaked: Online Privacy for the People Who Give a Fuck
+**Getting Your Shit Together with Cloaked: Online Privacy for the People Who Give a Fuck**
 
 Alright, listen the fuck up. If you've had your personal data splattered across the internet like a shitty Jackson Pollock painting, found your bank account drained by some asshole, or just woke up to the fact that your online privacy is as nonexistent as a vegan option at a barbecue joint, then it's high time to buckle up and take this shit seriously.
 
@@ -15,9 +15,9 @@ Maybe you're glued to your damn screen all day and haven't thought twice about d
 
 Let's lay it out straight: Online privacy is fucked. But instead of crying into your beer, let's turn your anxiety into some kick-ass action. Here's a no-bullshit guide to locking down your digital life and taking control of your digital footprint. No more half-assed measures; we're going balls to the wall.
 
-### Your Privacy Toolkit: Arm Yourself, Motherfucker! We Are Dropping Knowledge
+**Your Privacy Toolkit: Arm Yourself, Motherfucker! We Are Dropping Knowledge**
 
-## Strong-Ass Passwords: The Bedrock of Your Online Privacy
+#### Strong-Ass Passwords: The Bedrock of Your Online Privacy ####
 
 Let's break it down: in this digital jungle, strong passwords aren't just a good idea; they're the fucking foundation of your online privacy. It's the 21st century, and while we're not living in a sci-fi movie with retina scanners at every turn, strong passwords are the best damn system we've got to keep our digital lives locked down tight.
 
