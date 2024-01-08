@@ -55,7 +55,7 @@ Read more about Unique Emails/Phone Numbers [here](https://www.rougarou.io).
 
 If you're not encrypting your devices, you're basically throwing a "Hack Me, Please" party. It's like leaving your front door wide open, with a neon sign blinking "Come on in and take my shit!" Listen up, because this is crucial: Microsoft, Apple, and Google – yeah, the big tech overlords – they all offer full disk encryption for your devices. What the hell are you waiting for? Turn that shit on!
 
-Encrypting your device is like putting everything you own in a badass safe that even the slickest thieves can't crack. The Electronic Frontier Foundation (EFF) has this dope guide on [encryption] (<https://ssd.eff.org/module/what-should-i-know-about-encryption>). It's not just some boring textbook crap; it's your how-to guide for turning your device into Fort Knox.
+Encrypting your device is like putting everything you own in a badass safe that even the slickest thieves can't crack. The Electronic Frontier Foundation (EFF) has this dope guide on [encryption](https://ssd.eff.org/module/what-should-i-know-about-encryption). It's not just some boring textbook crap; it's your how-to guide for turning your device into Fort Knox.
 
 The EFF guide lays it out plain and simple: encrypting your data scrambles it so much that anyone who gets their hands on it won't be able to make heads or tails of it without the key. It's like speaking in a secret code that only you and your device understand. And this isn't just for your laptop or desktop; we're talking phones, tablets, even your damn smartwatch – if it stores your personal shit, encrypt it.
 
@@ -67,13 +67,14 @@ Browsing without a VPN or TOR is like streaking through your neighborhood – yo
 
 WireGuard is the badass on the block. It's not just some common cloak; it's a sleek, fast, and secure as hell kind of cloak. Imagine cutting through online bullshit like a hot knife through butter. That's WireGuard. It's lightweight, meaning no lag, no endless loading screens – just pure, unadulterated browsing freedom. And it's tight on security, using top-notch cryptography that's harder to crack than a goddamn bois d’arc (bodock) tree.
 
-But hey, if implementing WireGuard feels like overkill, no worries. There are plenty of VPN providers, like Nord (<https://nordvpn.com/>), that incorporate WireGuard and are ready to cover your digital ass. Just do your homework and find a VPN that doesn't suck. WIRED has a few suggestions (wired.com/story/best-vpn/) for you. Or, simply jump on the TOR (<https://www.torproject.org/>) bandwagon for that next-level anonymity.
+But hey, if implementing WireGuard feels like overkill, no worries. There are plenty of VPN providers, like [NordVPN](https://nordvpn.com/), that incorporate WireGuard and are ready to cover your digital ass. Just do your homework and find a VPN that doesn't suck. WIRED has a few suggestions (wired.com/story/best-vpn/) for you. Or, simply jump on the [TOR] (https://www.torproject.org/) bandwagon for that next-level anonymity.
 Remember, cruising the web raw is asking for trouble. So slap on that VPN and browse like a fucking ghost. Invisible, untouchable, and smart as hell. And, please, make sure to cover your ass.
-Read more about VPNs [here].
+
+Read more about VPNs [here](https://www.rougarou.io).
 
 **Encrypted Messaging: Secret Squirrel Shit**
 
-Stop letting Big Brother eavesdrop on your chats. Not on [Signal](<https://www.signal.org>) yet? You're basically broadcasting your private convos. This app ain't your average gabfest tool; it's like a steel vault for your messages.
+Stop letting Big Brother eavesdrop on your chats. Not on [Signal](https://www.signal.org) yet? You're basically broadcasting your private convos. This app ain't your average gabfest tool; it's like a steel vault for your messages.
 
 Here's the skinny: Signal's all about that end-to-end encryption life. Your words, your secrets, your random thoughts – they're locked down tighter than a miser's purse. It's just you and the person you're chatting with, no nosy eavesdroppers in between.
 And when the bigwigs came sniffing around for user info, Signal had zilch to hand over. Their data cupboard's so bare, they told the feds to take a hike and didn't break a sweat doing it. Read about their epic 'must suck to suck!' moment [right here](<https://www.signal.org/bigbrother/central-california-grand-jury>).
