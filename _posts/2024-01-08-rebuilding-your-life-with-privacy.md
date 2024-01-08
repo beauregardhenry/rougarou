@@ -2,7 +2,7 @@
 layout: post
 title: "Getting Your Shit Together - Online Privacy for People Who Give a Fuck"
 description: Small Steps You Can Take to Gain Control of Your Privacy
-author: B. Henry
+author: Beau Henry
 date:   2024-01-08 15:36:57 -0500
 categories: war privacy how-to
 ---
