@@ -13,7 +13,7 @@ Hey there, you wandering souls and secret keepers, welcome to the dark arts of t
 
 Enter Cloaked.com, your ultimate backstage pass to the internet, letting you slip through the digital crowd unnoticed. It's a magic wand that conjures up disposable, yet fully working, digital identities. With the flick of a thumb, you're creating new usernames, emails, phone numbers, and ironclad passwords. You become a digital master of illusion, creating and dissolving identities as needed, ideal for those who aim to traverse the web without a trace.
 
-Learn more about why you want identities [here](https://www.rougarou.io/rebuilding-your-life-with-privacy).
+Learn more about why you want identities [here](https://www.rougarou.io/2024/01/08/rebuilding-your-life-with-privacy).
 
 Here's the deal: managing who you are on the road is a freakin' art form. You’re gonna have to think it through. You can either be a one-trick pony with a single alias for all your shady dealings – from scoring that last-minute flight deal to sneaking into swanky hotel lobbies – or, you can go full-on Jason Bourne with a bunch of identities, tailor-made for every service from Uber, or public transit, to that overpriced minibar in your hotel room. Choose your fighter, folks.
 
