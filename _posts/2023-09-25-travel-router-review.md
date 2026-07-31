@@ -4,7 +4,7 @@ title: "GL-iNet Beryl (GL-MT1300) Travel Router Review"
 description: gl-inet travel router beryl gl-mt1300 overview privacy setup vpn wireguard open source
 author: Beau Henry
 date: 2023-09-25 21:15:34 -0500
-categories: travel privacy
+categories: travel privacy vpn wireguard
 ---
 What We Want:
 - connect devices to internet securely through unsecure access points
@@ -42,8 +42,8 @@ Our Views On Privacy
 * Anonymizing data is critical. We believe it is the only ethical way for a privacy-conscious company to employ usage data to improve their product.
 * It is intrusive and unacceptable to track someone across the web, but we believe watching how you use our site is fair game. A bad, but useful, analogy: A guy watching you walk around the mall, noting which stores you visit and what you purchase where is creepy as fuck. The independent bookstore owner who notes which sections/shelves his customers frequent and how they move around in his store simply wants to optimize his layout so that each customer enjoys their experience.
 
-## Introduction
+### Introduction
 
-## Overview
+### Overview
 
 ### Conclusion
