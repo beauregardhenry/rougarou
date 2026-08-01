@@ -5,7 +5,10 @@
   <body>
     <div class="container-fluid primary-bg-color py-4 mb-3">
       <div class="container pt-5">
-        <header class="text-center">
+                <header class="text-center">
+          <a href="{{ "/" | relative_url }}">
+            <img class="brand-mark" src="{{ "/assets/img/bisou-icon-180.png" | relative_url }}" width="64" height="64" alt="Rougarou">
+          </a>
           <h1>
             {{ page.title | escape }}
           </h1>
