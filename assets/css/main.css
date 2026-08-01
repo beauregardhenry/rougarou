@@ -183,7 +183,7 @@ a:hover {
 
 blockquote,
 blockquote p {
-    font-family: "Inconsolata", monospace !important;
+    font-family: "Charter", serif !important;
     border-left: 6px solid #999;
     padding-left: 1.5em;
 }
@@ -198,6 +198,5 @@ pre, code, kbd, samp {
 }
 
 footer p {
-    font-family: "Charter", serif !important;
-    font-style: italic;
+    font-family: "Inconsolata", monospace !important;
 }
