@@ -104,16 +104,36 @@
     font-display: swap;
 }
 
+:root {
+    --paper: #EDE3D0;
+    --paper-raised: #DED0B4;
+    --ink: #1C1A16;
+    --ink-soft: #6B6152;
+    --rust: #A3472A;
+    --rust-dark: #7E3620;
+    --rust-soft: #E3CBB9;
+    --rule: #D9CDB4;
+}
+
 .container {
     max-width: 940px;
 }
 
+html, body {
+    background-color: var(--paper) !important;
+}
+
+body {
+    color: var(--ink) !important;
+}
+
 .text-body-secondary {
-    color: #969696 !important;
+    color: var(--ink-soft) !important;
 }
 
 .primary-bg-color {
-    background-color: #f0f0f0;
+    background-color: var(--paper-raised);
+    border-bottom: 2px solid var(--ink);
 }
 
 /* Site wordmark + individual post title */
@@ -160,17 +180,18 @@ p {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--rust);
 }
 
 a:hover {
     text-decoration: underline;
+    color: var(--rust-dark);
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #ffffff !important;
-    color: #333;
-    border: 1px solid #d3d3d3;
+    background-color: var(--paper-raised) !important;
+    color: var(--ink);
+    border: 1px solid var(--rule);
     border-radius: 20px;
     text-decoration: none;
     font-family: "Degular", sans-serif !important;
@@ -178,25 +199,26 @@ a:hover {
 }
 
 .btn-primary:hover {
-    border-color: black;
+    border-color: var(--rust);
 }
 
-blockquote,
+blockquote {
+    color: var(--ink);
+    background: var(--rust-soft);
+    border-left: 6px solid var(--rust);
+    padding: 1rem 1.5em;
+    border-radius: 0 4px 4px 0;
+}
+
 blockquote p {
     font-family: "Charter", serif !important;
-    border-left: 6px solid #999;
-    padding-left: 1.5em;
 }
 
 pre, code, kbd, samp {
     font-family: "Inconsolata", monospace !important;
 }
 
-.post-content a {
-    text-decoration: underline;
-    color: darkgreen;
-}
-
 footer p {
     font-family: "Inconsolata", monospace !important;
+    color: var(--ink-soft);
 }
