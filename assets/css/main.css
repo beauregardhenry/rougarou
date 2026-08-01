@@ -1,7 +1,108 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:400,300,700");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:400,300,700");
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700");
+/* Site fonts — self-hosted, no CDN imports.
+   Compadre: title (font-weight 600 selects the Wide cut). */
+@font-face {
+    font-family: "Compadre";
+    src: url("/assets/fonts/ohno/compadre/Compadre-Demo-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Compadre";
+    src: url("/assets/fonts/ohno/compadre/Compadre-Demo-Wide.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Degular";
+    src: url("/assets/fonts/ohno/degular/Degular/DegularDemo-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Degular";
+    src: url("/assets/fonts/ohno/degular/Degular/DegularDemo-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Degular";
+    src: url("/assets/fonts/ohno/degular/Degular/DegularDemo-Italic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Swear Text";
+    src: url("/assets/fonts/ohno/swear/SwearText/SwearTextDemo-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Swear Text";
+    src: url("/assets/fonts/ohno/swear/SwearText/SwearTextDemo-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Swear Text";
+    src: url("/assets/fonts/ohno/swear/SwearText/SwearTextDemo-Italic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Charter";
+    src: url("/assets/fonts/charter/charter_regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Charter";
+    src: url("/assets/fonts/charter/charter_bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Charter";
+    src: url("/assets/fonts/charter/charter_italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Charter";
+    src: url("/assets/fonts/charter/charter_bold_italic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    src: url("/assets/fonts/inconsolata/Inconsolata-VariableFont.ttf") format("truetype-variations");
+    font-weight: 200 900;
+    font-style: normal;
+    font-display: swap;
+}
 
 .container {
     max-width: 940px;
@@ -15,40 +116,45 @@
     background-color: #f0f0f0;
 }
 
+/* Site wordmark + individual post title */
 header h1 {
-    font-family: "retail", sans-serif !important;
-    font-weight: 700;
+    font-family: "Compadre", sans-serif !important;
+    font-weight: 600;
     font-size: 3rem;
     text-transform: uppercase;
 }
 
+/* Homepage tagline lines + post meta (date/author) + "back to all posts" */
 header h2 {
-    font-family: 'Merriweather', serif !important;
-    font-weight: 300;
+    font-family: "Degular", sans-serif !important;
+    font-weight: 400;
     font-size: 1.3rem;
     line-height: 100%;
 }
 
-header p {
-    font-family: 'Open Sans', sans-serif !important;
-    font-weight: 300;
-    font-size: 1.8rem;
-    text-transform: uppercase;
+/* Post-listing title (index, category, author pages) */
+h3 {
+    font-family: "Compadre", sans-serif !important;
+    font-weight: 600;
 }
 
-h3 {
-    font-family: "Open Sans", sans-serif !important;
+/* In-post subheadings only */
+.post-content h2,
+.post-content h3 {
+    font-family: "Degular", sans-serif !important;
     font-weight: 700;
 }
 
+/* Post-listing byline (date | author | category) */
 h4 {
-    font-family: 'Merriweather', serif !important;
+    font-family: "Degular", sans-serif !important;
+    font-weight: 400;
     font-size: small;
     letter-spacing: 1px;
 }
 
 p {
-    font-family: "Inconsolata", monospace !important;
+    font-family: "Swear Text", sans-serif !important;
     font-weight: 400;
 }
 
@@ -67,7 +173,7 @@ a:hover {
     border: 1px solid #d3d3d3;
     border-radius: 20px;
     text-decoration: none;
-    font-family: "Open Sans", sans-serif !important;
+    font-family: "Degular", sans-serif !important;
     font-weight: 400;
 }
 
@@ -75,12 +181,23 @@ a:hover {
     border-color: black;
 }
 
-blockquote {
+blockquote,
+blockquote p {
+    font-family: "Inconsolata", monospace !important;
     border-left: 6px solid #999;
     padding-left: 1.5em;
+}
+
+pre, code, kbd, samp {
+    font-family: "Inconsolata", monospace !important;
 }
 
 .post-content a {
     text-decoration: underline;
     color: darkgreen;
+}
+
+footer p {
+    font-family: "Charter", serif !important;
+    font-style: italic;
 }
