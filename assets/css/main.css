@@ -236,4 +236,5 @@ pre, code, kbd, samp {
 footer p {
     font-family: "Inconsolata", monospace !important;
     color: var(--ink-soft);
+    text-align: center !important;
 }
