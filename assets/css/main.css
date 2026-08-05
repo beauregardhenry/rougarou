@@ -152,13 +152,16 @@ header h1 {
 
 /* Homepage tagline lines + post meta (date/author) + "back to all posts" */
 header h2 {
-    font-family: "Degular", sans-serif !important;
+    font-family: "Charter", serif !important;
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 100%;
     text-align: center !important;
 }
 
+.tagline {
+    font-family: "Charter", serif !important;
+}
 /* "Back to all posts" stays left, not centered like the rest of the header */
 .post-back {
     text-align: left !important;
