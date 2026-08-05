@@ -1,3 +1,12 @@
+---
+layout: post
+title: "The Importance of Testing Your Code"
+description: ghostwritten blog post
+author: Jake Gaylor
+date:   2024-01-04 05:42:26 -0500
+categories: accountability testing unit integration end-to-end
+---
+
 What is the overarching purpose of this blog?
 
 This blog exists to examine the role that personal accountability, effective communication, empathy and understanding, continuous learning and improvement, building trust and psychological safety, leadership and influence, and resilience & perseverance play in organizational success. And we hope you’ll find some lessons that prove useful in other areas of life.

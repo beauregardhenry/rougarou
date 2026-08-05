@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Sun Tzu's The Art of War - Your Business Depends On It"
+description: How a 2500 year old book can help your startup
+author: Jake Gaylor
+date:   2023-09-10 05:42:26 -0500
+categories: war saas business
+---
+
 Manifesto for Agile Software Development
 We are uncovering better ways of developing software by doing it and helping others do it.
 Through this work we have come to value:

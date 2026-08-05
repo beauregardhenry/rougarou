@@ -1,3 +1,12 @@
+---
+layout: post
+title: "AB Testing Ghostwritten Blog Post"
+description: product market fit
+author: Jake Gaylor
+date:   2023-12-1003 05:42:26 -0500
+categories: testing success product-market-fit
+---
+
 Hey Team,
 
 Recently, we've been talking about how getting to 10,000 users is the next goal for Cloaked. I've been thinking about the obstacles we have in our way and have identified some work that I think will have an outsized impact, and I wanted to explain why I think this work is so important.
