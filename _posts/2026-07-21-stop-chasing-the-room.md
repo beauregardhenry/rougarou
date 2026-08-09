@@ -7,7 +7,7 @@ date:   2026-07-21 05:42:26 -0500
 categories: climber aspirational motivation
 ---
 
-*** Why Seat-at-the-Table Thinking Is the Wrong Frame for AI Safety ***
+**Why Seat-at-the-Table Thinking Is the Wrong Frame for AI Safety**
 Everyone who cares about AI safety wants a seat at the table. I understand the instinct: decisions are consequential, timelines are compressed, and the people making them are few. If you care about the outcome, you want to be in that room.
 
 That's rational, not naive, but it gets the sequence wrong. In evidence-driven organizations, influence precedes the seat at the table — influence doesn't come with it.
