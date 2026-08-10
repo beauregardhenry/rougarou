@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Redis vs DynamoDB"
-description: How a 2500 year old book can help your startup
-author: Jake Gaylor
+title: "Redis vs Dynamo DB"
+description: How to Pick a Fight
+author: Beau Henry
 date:   2023-09-10 05:42:26 -0500
-categories: war saas business
+categories: war saas business agile innovation boring
 ---
 <p style="text-alighn: center;">
 Manifesto for Agile Software Development

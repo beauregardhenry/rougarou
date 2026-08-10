@@ -2,7 +2,7 @@
 layout: post
 title: "AB Testing Ghostwritten Blog Post"
 description: product market fit
-author: Jake Gaylor
+author: Beau Henry
 date:   2023-12-03 05:42:26 -0500
 categories: testing success product-market-fit
 ---
