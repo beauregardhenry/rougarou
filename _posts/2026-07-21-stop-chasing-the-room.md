@@ -37,6 +37,6 @@ Both are outcomes, not starting points.
 
 People who moved the needle on AI safety didn't start by pursuing access; they started by producing work that decision-makers couldn't responsibly ignore, <em>so the rooms came to them</em>.
 
-**<em>Don't seek a seat at the table.</em>**
-
+**Don't seek a seat at the table.**
+<br>
 Build a work history that makes the table's decisions better whether you're there or not. That's not a consolation prize, it's the only strategy that compounds.
