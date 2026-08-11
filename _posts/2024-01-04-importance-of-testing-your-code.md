@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Importance of Testing Your Code"
-description: ghostwritten blog post
+description: blog post
 author: Beau Henry
 date:   2024-01-04 05:42:26 -0500
 categories: accountability testing unit integration end-to-end
