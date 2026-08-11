@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AB Testing Ghostwritten Blog Post"
+title: "AB Testing Blog Post"
 description: product market fit
 author: Beau Henry
 date:   2023-12-03 05:42:26 -0500
