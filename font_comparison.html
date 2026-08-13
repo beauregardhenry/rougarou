@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ohno Font Comparison</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .font-section {
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            page-break-inside: avoid;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .font-name {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .font-sample {
+            font-size: 24px;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        @font-face {
+            font-family: "Beastly";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Beastly/BeastlyDemo-14Point.otf');
+        }
+
+        @font-face {
+            font-family: "Camelion";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Camelion/CamelionDemo-MediumItalic.otf');
+        }
+
+        @font-face {
+            font-family: "Casserole";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Casserole/CasseroleDemo-Flare.otf');
+        }
+
+        @font-face {
+            font-family: "Cheee";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Cheee/CheeeDemo-Pickles.otf');
+        }
+
+        @font-face {
+            font-family: "Coniferous";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Coniferous/ConiferousDemo-Medium.otf');
+        }
+
+        @font-face {
+            font-family: "Eckmannpsych";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Eckmannpsych/Eckmannpsych-Demo-Small.otf');
+        }
+
+        @font-face {
+            font-family: "Forevs";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Forevs/ForevsDemo-Italic.otf');
+        }
+
+        @font-face {
+            font-family: "Hobeaux";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Hobeaux/HobeauxDemo-Semibold.otf');
+        }
+
+        @font-face {
+            font-family: "Hobeaux_Rococeaux";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Hobeaux Rococeaux/Hobeaux_Rococeaux_Demo-Regular.otf');
+        }
+
+        @font-face {
+            font-family: "Irregardless";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Irregardless/IrregardlessDemo-Italic.otf');
+        }
+
+        @font-face {
+            font-family: "Montreuil";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Montreuil/MontreuilDemo-Italic.otf');
+        }
+
+        @font-face {
+            font-family: "Ohno_Blazeface";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Ohno Blazeface/OhnoBlazefaceDemo-60Point.otf');
+        }
+
+        @font-face {
+            font-family: "Ohno_Casual";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Ohno Casual/OhnoCasualDemo-Regular.otf');
+        }
+
+        @font-face {
+            font-family: "Ohno_Fatface_Compressed";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Ohno Fatface Compressed/OhnoFatfaceDemo-18PtCompressed.otf');
+        }
+
+        @font-face {
+            font-family: "Ohno_Fatface_Condensed";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Ohno Fatface Condensed/OhnoFatfaceDemo-12PtCondensed.otf');
+        }
+
+        @font-face {
+            font-family: "Ohno_Fatface_Narrow";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Ohno Fatface Narrow/OhnoFatfaceDemo-60PtNarrow.otf');
+        }
+
+        @font-face {
+            font-family: "Ohno_Fatface_Normal";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Ohno Fatface Normal/OhnoFatfaceDemo-16Pt.otf');
+        }
+
+        @font-face {
+            font-family: "Ohno_Fatface_Squished";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Ohno Fatface Squished/OhnoFatfaceDemo-24PtSquished.otf');
+        }
+
+        @font-face {
+            font-family: "Ohno_Softie";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Ohno Softie/OhnoSoftieDemo-Medium.otf');
+        }
+
+        @font-face {
+            font-family: "Polymath";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Polymath/PolymathDemo-Semibold.otf');
+        }
+
+        @font-face {
+            font-family: "Polymath_Display";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Polymath Display/PolymathDispDemo-SuperIt.otf');
+        }
+
+        @font-face {
+            font-family: "Polymath_Text";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Polymath Text/PolymathTextDemo-MediumIt.otf');
+        }
+
+        @font-face {
+            font-family: "Regrets";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Regrets/RegretsDemo-Ornaments.otf');
+        }
+
+        @font-face {
+            font-family: "Viktor_Script";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Viktor Script/ViktorScriptDemo-Regular.otf');
+        }
+
+        @font-face {
+            font-family: "Vulf_Mono";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Vulf Mono/VulfMonoDemo-Italic.otf');
+        }
+
+        @font-face {
+            font-family: "Vulf_Sans";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Vulf Sans/VulfSansDemo-Medium.otf');
+        }
+
+        @font-face {
+            font-family: "Yumex";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Yumex/YumexDemo-Medium.otf');
+        }
+
+        @font-face {
+            font-family: "Yumex_Script";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/Yumex Script/YumexScriptDemo-Regular.otf');
+        }
+
+        @font-face {
+            font-family: "compadre";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/compadre/Compadre-Demo-Regular.otf');
+        }
+
+        @font-face {
+            font-family: "covik_sans";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/covik-sans/CovikSansDemo-Medium.otf');
+        }
+
+        @font-face {
+            font-family: "degular";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/degular/Degular Text/DegularTextDemo-Italic.otf');
+        }
+
+        @font-face {
+            font-family: "obviously";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/obviously/Obviously Narrow/ObviouslyDemo-NarrowMedium.otf');
+        }
+
+        @font-face {
+            font-family: "retail";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/retail/Retail Text/RetailTextDemo-Medium.otf');
+        }
+
+        @font-face {
+            font-family: "swear";
+            src: url('file:////Users/beauregard/github/rougarou/assets/fonts/ohno/swear/SwearText/SwearTextDemo-Medium.otf');
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Ohno Fonts Comparison</h1>
+
+    <div class="font-section">
+        <div class="font-name">Beastly</div>
+        <div class="font-sample" style="font-family: Beastly;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Camelion</div>
+        <div class="font-sample" style="font-family: Camelion;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Casserole</div>
+        <div class="font-sample" style="font-family: Casserole;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Cheee</div>
+        <div class="font-sample" style="font-family: Cheee;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Coniferous</div>
+        <div class="font-sample" style="font-family: Coniferous;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Eckmannpsych</div>
+        <div class="font-sample" style="font-family: Eckmannpsych;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Forevs</div>
+        <div class="font-sample" style="font-family: Forevs;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Hobeaux</div>
+        <div class="font-sample" style="font-family: Hobeaux;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Hobeaux Rococeaux</div>
+        <div class="font-sample" style="font-family: Hobeaux_Rococeaux;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Irregardless</div>
+        <div class="font-sample" style="font-family: Irregardless;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Montreuil</div>
+        <div class="font-sample" style="font-family: Montreuil;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Ohno Blazeface</div>
+        <div class="font-sample" style="font-family: Ohno_Blazeface;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Ohno Casual</div>
+        <div class="font-sample" style="font-family: Ohno_Casual;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Ohno Fatface Compressed</div>
+        <div class="font-sample" style="font-family: Ohno_Fatface_Compressed;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Ohno Fatface Condensed</div>
+        <div class="font-sample" style="font-family: Ohno_Fatface_Condensed;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Ohno Fatface Narrow</div>
+        <div class="font-sample" style="font-family: Ohno_Fatface_Narrow;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Ohno Fatface Normal</div>
+        <div class="font-sample" style="font-family: Ohno_Fatface_Normal;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Ohno Fatface Squished</div>
+        <div class="font-sample" style="font-family: Ohno_Fatface_Squished;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Ohno Softie</div>
+        <div class="font-sample" style="font-family: Ohno_Softie;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Polymath</div>
+        <div class="font-sample" style="font-family: Polymath;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Polymath Display</div>
+        <div class="font-sample" style="font-family: Polymath_Display;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Polymath Text</div>
+        <div class="font-sample" style="font-family: Polymath_Text;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Regrets</div>
+        <div class="font-sample" style="font-family: Regrets;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Viktor Script</div>
+        <div class="font-sample" style="font-family: Viktor_Script;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Vulf Mono</div>
+        <div class="font-sample" style="font-family: Vulf_Mono;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Vulf Sans</div>
+        <div class="font-sample" style="font-family: Vulf_Sans;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Yumex</div>
+        <div class="font-sample" style="font-family: Yumex;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">Yumex Script</div>
+        <div class="font-sample" style="font-family: Yumex_Script;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">compadre</div>
+        <div class="font-sample" style="font-family: compadre;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">covik-sans</div>
+        <div class="font-sample" style="font-family: covik_sans;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">degular</div>
+        <div class="font-sample" style="font-family: degular;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">obviously</div>
+        <div class="font-sample" style="font-family: obviously;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">retail</div>
+        <div class="font-sample" style="font-family: retail;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+    <div class="font-section">
+        <div class="font-name">swear</div>
+        <div class="font-sample" style="font-family: swear;">The quick brown fox jumps over the lazy dog. Typography matters in design.</div>
+    </div>
+
+</body>
+</html>
