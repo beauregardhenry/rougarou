@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "A System Card is a Ledger"
-description: Earn Authenticity and Trust; Watchout for Drift
+description: A close reading of the GPT-5 System Card asks where evidence ends, judgment begins, and safety claims lose precision as they move through the document.
 author: Beau Henry
-date:   2026-08-15 09:30:00 -0500
-categories: climber aspirational motivation
+date:   2026-08-15 09:30:03 -0500
+categories: analysis, external object, system card, GPT5
 ---
 
 <em>Where Evidence Ends and Judgment Begins in the GPT-5 System Card</em>
