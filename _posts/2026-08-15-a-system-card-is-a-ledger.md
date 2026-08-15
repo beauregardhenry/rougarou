@@ -7,7 +7,7 @@ date:   2026-08-15 09:30:00 -0500
 categories: climber aspirational motivation
 ---
 
-*** A System Card Is a Ledger ***
+### A System Card Is a Ledger
 Where Evidence Ends and Judgment Begins in the GPT-5 System Card
 The GPT-5 System Card is fifty-nine pages of capability evaluations, safety benchmarks, red-team findings, safeguards, and deployment reasoning. It's tempting to read it as a scientific report and ask whether the experiments are good enough. That misses the harder problem. The document also makes a safety case: these are the capabilities we measured, these are the risks we believe follow from them, these are the safeguards we deployed, and here is why we believe the residual risk is acceptable.
 Those statements don't share an epistemic status. A benchmark result is an observation under specified conditions. A causal explanation is an inference about why that result occurred. A capability classification applies a decision rule to evidence. A claim that risk has been "…sufficiently minimized" combines evidence with a threat model, assumptions about adversary behavior, safeguard performance, and organizational risk tolerance. A system card has to hold all of these at once, and its integrity depends on keeping their provenance intact as they move through the document.
