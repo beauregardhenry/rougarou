@@ -7,8 +7,6 @@ date:   2026-08-15 09:30:00 -0500
 categories: climber aspirational motivation
 ---
 
-### A System Card Is a Ledger
-
 <em>Where Evidence Ends and Judgment Begins in the GPT-5 System Card</em>
 
 The GPT-5 System Card is fifty-nine pages of capability evaluations, safety benchmarks, red-team findings, safeguards, and deployment reasoning. It's tempting to read it as a scientific report and ask whether the experiments are good enough. That misses the harder problem. The document also makes a safety case: these are the capabilities we measured, these are the risks we believe follow from them, these are the safeguards we deployed, and here is why we believe the residual risk is acceptable.
