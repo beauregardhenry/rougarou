@@ -1,6 +1,11 @@
-# The Red Team Hour
-
-*rougarou.io*
+---
+layout: post
+title: The Red Team Hour
+description: The Most Honest Number in the GPT-5 System Card, and What It Leaves Out
+author: Beau Henry
+date: 2026-08-17 09:00:00 -0500
+categories: analysis gpt5 system card red-teaming jailbreaks measurement external-objects
+---
 
 There is a number buried in the GPT-5 system card that I haven't been able to stop thinking about.
 
