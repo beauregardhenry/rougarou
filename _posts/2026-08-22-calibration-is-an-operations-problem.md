@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Calibration is an Operations Problem
-description: Where the GPT-5 System Card Separates Evidence From Judgment Well, Where It Does Not, and Why That is an Operations Job
+description: Where the GPT-5 System Card Separates Evidence From Judgment Well, Where It Does Not, and Why That isgit a an Operations Job
 author: Beau Henry
 date: 2026-08-22 09:00:00 -0500
 categories: calibration analysis gpt5 system-card documentation operations editorial-standards evidence-and-judgment

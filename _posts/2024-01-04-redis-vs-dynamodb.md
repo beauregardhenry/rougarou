@@ -65,7 +65,7 @@ Breaking that down, serverless means nothing to provision, patch, or manage, no 
 
 Encrypted at rest means the services meet compliance and regulatory requirements. We can
 choose to use AWS-owned keys (default), AWS-managed keys, or customer-managed keys,
-with AWS Key Management Service provided at no additional charge.
+with AWS Key Management Service provided at no more charge.
 Point-in-time Recovery means we can restore the table to any point in time, down to the second,
 for the preceding 35 days using a single API call, with no impact on performance or availability.
 Finally, IAM roles allow us to delegate access to just those applications that need it.
