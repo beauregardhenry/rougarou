@@ -1,3 +1,12 @@
+---
+layout: post
+title: The Configuration Is the Finding
+description: Benchmark numbers without their configuration are anecdotes wearing decimal points. Here's what should be standard.
+author: Beau Henry
+date: 2026-09-02 09:00:00 -0500
+categories: analysis ai evaluations system cards benchmarks methodology reproducibility measurement configuration
+---
+
 Somewhere in the GPT-5 system card a footnote exists that should be a standard.
 
 The card reports a SWE-Bench result, then explains every preparedness evaluation in the document ran at the model's maximum trained-in verbosityj (which is higher than the "high" setting available in the API). The 74.9% figure published in the GPT-5 launch blog post ran at the API default. It adds, plainly, that changes in verbosity potentially lead to variation in eval performance.
