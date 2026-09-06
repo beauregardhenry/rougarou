@@ -34,7 +34,8 @@ layout: default
           <p>
             {{ post.excerpt }}
           </p>
-          <a class="btn btn-primary" href="{{ post.url | relative_url }}">
+          <a class="btn btn-primary" href="{{ post.url | relative_url }}"
+            onclick="posthog && posthog.capture('continue_reading_clicked', { post_title: {{ post.title | jsonify }}, post_url: {{ post.url | jsonify }}, post_author: {{ post.author | jsonify }} })">
             Continue reading
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -46,3 +47,12 @@ layout: default
     </div>
   {%- endif -%}
 </div>
+
+{%- if site.posthog.token -%}
+<script>
+  // post_list_viewed — fires when a visitor views the main post listing page
+  posthog.capture('post_list_viewed', {
+    total_posts: {{ site.posts.size }}
+  });
+</script>
+{%- endif -%}

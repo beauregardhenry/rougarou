@@ -48,3 +48,13 @@ layout: default
     </div>
   {%- endif -%}
 </div>
+
+{%- if site.posthog.token -%}
+<script>
+  // category_viewed — fires when a visitor browses posts filtered by a category
+  posthog.capture('category_viewed', {
+    category: {{ page.category | jsonify }},
+    post_count: {{ page.posts.size }}
+  });
+</script>
+{%- endif -%}

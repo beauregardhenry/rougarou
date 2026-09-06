@@ -48,6 +48,28 @@
       </div>
     </div>
     {%- include bootstrap-js.html -%}
+    {%- if site.posthog.token -%}
+    <script>
+      // post_viewed — fires when a visitor reads a blog post
+      posthog.capture('post_viewed', {
+        post_title: {{ page.title | jsonify }},
+        post_date: {{ page.date | date: "%Y-%m-%d" | jsonify }},
+        post_categories: {{ page.categories | jsonify }},
+        post_author: {{ page.author | jsonify }},
+        post_url: {{ page.url | jsonify }}
+      });
+
+      // rss_feed_clicked — fires when a visitor clicks the RSS subscribe link
+      document.querySelectorAll('a[href*="feed.xml"]').forEach(function(link) {
+        link.addEventListener('click', function() {
+          posthog.capture('rss_feed_clicked', {
+            post_title: {{ page.title | jsonify }},
+            post_url: {{ page.url | jsonify }}
+          });
+        });
+      });
+    </script>
+    {%- endif -%}
   </body>
 
 </html>

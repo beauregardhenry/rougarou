@@ -30,6 +30,11 @@ permalink: /:year/:month/:day/:title
 # paginate: 8
 
 show_excerpts: true # set to false to remove excerpts on the homepage
+
+# PostHog analytics
+posthog:
+  token: "phc_nHbeBN8DywypUuZJxGk2aswVciRXgxymxgv6eKvvS8Cd"
+  host: "https://us.i.posthog.com"
 # Build settings
 # theme: minima
 plugins:

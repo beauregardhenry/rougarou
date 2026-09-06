@@ -51,3 +51,12 @@ layout: default
     </div>
   {%- endif -%}
 </div>
+
+{%- if site.posthog.token -%}
+<script>
+  // author_viewed — fires when a visitor browses posts filtered by author
+  posthog.capture('author_viewed', {
+    post_count: {{ author_posts.size }}
+  });
+</script>
+{%- endif -%}
