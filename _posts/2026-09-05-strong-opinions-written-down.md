@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  Strong Opinions, Held Loosely, Written Down
