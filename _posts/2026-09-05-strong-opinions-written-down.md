@@ -3,7 +3,7 @@ layout: post
 title:  Strong Opinions, Held Loosely, Written Down
 description: Why the loosely held half of the phrase only works if you write it down first
 author: Beau Henry
-date:   2026-09-06 09:39:02 -0500
+date:   2026-09-05 09:39:00 -0500
 categories: epistemics writing calibration
 ---
 
