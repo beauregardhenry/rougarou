@@ -5,9 +5,16 @@ description: Three outside teams tested Claude Opus 5 safeguards and reported it
 author: Beau Henry
 date: 2026-09-10 09:00:00 -0500
 categories: ai-safety writing evaluation career
+sources:
+  - title: "Anthropic: Claude Opus 5 System Card (July 2026), sections 3.5.1\u20133.5.2"
+    url: "https://anthropic.com/claude-opus-5-system-card#page=50"
+    note: "Internal robustness testing and the three external campaigns are reported on pages 50–51."
+  - title: "OpenAI: GPT-5 System Card, section 5.3.3.3"
+    url: "https://cdn.openai.com/gpt-5-system-card.pdf#page=51"
+    note: "The biology API campaign used for comparison is reported on PDF pages 51–52."
 ---
 
-Three outside teams tested Claude Opus 5's cyber safeguards this year, employing different lengths of effort. Close to 100 hours went to Trajectory Labs. They completed one task using prompting built for that task. They found no new universal jailbreak strategies, so their result does not generalize. About 16 hours went to 10a Labs, which found nothing. Grayswan's automated attacker ran 150 times against each task and succeeded at none of them.
+Three outside teams tested [Claude Opus 5's cyber safeguards](https://anthropic.com/claude-opus-5-system-card#page=51) this year, employing different lengths of effort. Close to 100 hours went to Trajectory Labs. They completed one task using prompting built for that task. They found no new universal jailbreak strategies, so their result does not generalize. About 16 hours went to 10a Labs, which found nothing. Grayswan's automated attacker ran 150 times against each task and succeeded at none of them.
 
 ## Rank those three efforts by how hard they tried.
 

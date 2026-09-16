@@ -1,0 +1,16 @@
+---
+layout: default
+title: Topics
+permalink: /categories/
+---
+<section class="page-intro">
+  <p class="eyebrow">Archive</p>
+  <h1>Browse by topic</h1>
+  <a class="text-link" href="{{ '/archive/' | relative_url }}">All essays →</a>
+</section>
+<ul class="topic-directory">
+{% assign topic_pages = site.pages | where: 'layout', 'category_index' | sort: 'category_slug' %}
+{% for topic in topic_pages %}
+  <li><a href="{{ topic.url | relative_url }}">{{ topic.category | escape }}</a></li>
+{% endfor %}
+</ul>

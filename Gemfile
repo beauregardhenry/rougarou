@@ -8,6 +8,11 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.3.2"
+# Explicit dependencies for Ruby versions that no longer bundle these libraries.
+gem "logger"
+gem "csv"
+gem "base64"
+gem "bigdecimal"
 gem 'posthog-ruby'
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -18,7 +23,6 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem 'jekyll-seo-tag'
   gem "jekyll-paginate"
-  gem "jekyll-category-pages"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

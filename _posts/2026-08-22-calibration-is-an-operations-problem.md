@@ -1,10 +1,17 @@
 ---
 layout: post
 title: Calibration is an Operations Problem
-description: Where the GPT-5 System Card Separates Evidence From Judgment Well, Where It Does Not, and Why That isgit a an Operations Job
+description: Where the GPT-5 System Card Separates Evidence From Judgment Well, Where It Does Not, and Why That Is an Operations Job
 author: Beau Henry
 date: 2026-08-22 09:00:00 -0500
 categories: calibration analysis gpt5 system-card documentation operations editorial-standards evidence-and-judgment
+sources:
+  - title: "OpenAI: GPT-5 System Card, section 5.1.1.4"
+    url: "https://cdn.openai.com/gpt-5-system-card.pdf#page=27"
+    note: "The tacit-knowledge benchmark reports both the 80% consensus baseline and the 63% PhD baseline."
+  - title: "OpenAI: GPT-5 System Card, section 5.1.3.1"
+    url: "https://cdn.openai.com/gpt-5-system-card.pdf#page=37"
+    note: "The SWE-Bench note identifies the different verbosity settings behind the published results."
 ---
 
 When I wrote *The Calibration Standard* I put the whole burden on the model. Nine rules, three of them hard stops, all of them addressed to a system that cannot reliably tell what it knows from what it invented.
@@ -27,7 +34,7 @@ Assessments are different: a result "does not meet the threshold" for a risk cat
 
 Then there's the transition — the sentence where a measurement becomes an assessment. That sentence is where nearly all of the interesting content lives, and it is almost never marked.
 
-Take the expert baseline problem. The GPT-5 system card reports a tacit-knowledge and troubleshooting benchmark with two reference points: a consensus expert baseline of 80% and an 80th-percentile PhD expert baseline of 63%. It then reports that no tested model outperforms the consensus baseline, though all of them outperform the 80th-percentile baseline.
+Take the expert baseline problem. The [GPT-5 system card](https://cdn.openai.com/gpt-5-system-card.pdf#page=27) reports a tacit-knowledge and troubleshooting benchmark with two reference points: a consensus expert baseline of 80% and an 80th-percentile PhD expert baseline of 63%. It then reports that no tested model outperforms the consensus baseline, though all of them outperform the 80th-percentile baseline.
 
 Both sentences are true. They are the same measurement. They produce opposite headlines — *models still below human experts* and *models beat 80% of PhDs* — and which one a reader walks away with depends entirely on a choice made upstream about which baseline to foreground.
 
@@ -75,4 +82,4 @@ Nobody wants that job to exist. It slows things down and it is unpleasant to be 
 
 I wrote nine rules for a model because that was the system I could reach from my desk. The harder version is the same nine rules pointed at the people writing about the model, and somebody has to be assigned to enforce it.
 
-*The Calibration Standard* is [here](https://rougarou.io). Still take it, still break it, still tell me where.
+*The Calibration Standard* is [here]({% post_url 2026-06-26-the-calibration-standard %}). Still take it, still break it, still tell me where.

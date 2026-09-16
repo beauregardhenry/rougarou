@@ -5,11 +5,15 @@ description: A close reading of the GPT-5 System Card asks where evidence ends, 
 author: Beau Henry
 date:   2026-08-15 09:30:03 -0500
 categories: analysis, external object, system card, GPT5
+sources:
+  - title: "OpenAI: GPT-5 System Card (August 2025)"
+    url: "https://cdn.openai.com/gpt-5-system-card.pdf"
+    note: "The original 60-page PDF. This essay discusses the overview, safety evaluations, and the biological-risk safeguards in section 5.3."
 ---
 
 <em>Where Evidence Ends and Judgment Begins in the GPT-5 System Card</em>
 
-The GPT-5 System Card is sixty pages of capability evaluations, safety benchmarks, red-team findings, safeguards, and deployment reasoning. It’s tempting to read it as a scientific report and ask whether the experiments are good enough. That misses the harder problem. The document is also making a safety case: these are the capabilities we measured, these are the risks we believe follow from them, these are the safeguards we deployed, and here is why we believe the residual risk is acceptable.
+The [GPT-5 System Card](https://cdn.openai.com/gpt-5-system-card.pdf) is sixty pages of capability evaluations, safety benchmarks, red-team findings, safeguards, and deployment reasoning. It’s tempting to read it as a scientific report and ask whether the experiments are good enough. That misses the harder problem. The document is also making a safety case: these are the capabilities we measured, these are the risks we believe follow from them, these are the safeguards we deployed, and here is why we believe the residual risk is acceptable.
 
 Those statements don’t share the same epistemic status. A benchmark result is an observation under specified conditions. A causal explanation is an inference about why that result occurred. A capability classification applies a decision rule to evidence. A statement about a control not yet deployed is a prediction about its future performance. A claim that risk has been “sufficiently minimized” combines evidence with a threat model, assumptions about adversary behavior, safeguard performance, and organizational risk tolerance. A system card has to hold all of these at once, and its integrity depends on keeping their provenance intact as they move through the document.
 
