@@ -1,75 +1,54 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   {%- include head.html -%}
-
   <body>
-    <div class="container-fluid primary-bg-color py-4 mb-3">
-      <div class="container pt-5">
-                <header class="text-center">
-          <a href="{{ "/" | relative_url }}">
-            <img class="brand-mark" src="{{ "/assets/img/bisou-icon-180.png" | relative_url }}" width="64" height="64" alt="Rougarou">
-          </a>
-          <h1>
-            {{ page.title | escape }}
-          </h1>
-          <h2 class="post-meta text-body-secondary">
-            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-              {{ page.date | date: date_format }}
-            </time>
-            {%- if page.author -%}
-              • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-            {%- endif -%}</p>
-          </h2>
-          <h2 class="post-back text-body-secondary">
-            <a href="{{ "/" | relative_url }}">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-              </svg>
-              Back to all Posts
-            </a>
-          </h2>
-        </header>
-      </div>
-    </div>    
-
-    <div class="container post-content">
-      {{ content }}
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="primary-bg-color masthead post-masthead">
+      <header class="container text-center">
+        <a href="{{ '/' | relative_url }}"><img class="brand-mark" src="{{ '/assets/img/bisou-icon-180.png' | relative_url }}" width="64" height="64" alt="Rougarou home"></a>
+        {% include navigation.html %}
+        <h1>{{ page.title | escape }}</h1>
+        <p class="reading-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time>{% if page.author %} · <a href="{{ '/by/' | relative_url }}{{ page.author | slugify }}">{{ page.author | escape }}</a>{% endif %}</p>
+      </header>
     </div>
-    
-    
-    <div class="container-fluid my-5">
-      <div class="container border-top">
-        <footer class="py-2 my-2">
-          <p class="gittext-body-secondary">
-            © 2026 Rougarou.io | subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a>
-          </p>
-        </footer>
-      </div>
-    </div>
+    <main id="main-content" class="container post-content">
+      <article>
+        {{ content }}
+      </article>
+      {% if page.sources %}
+      <aside class="source-note" aria-labelledby="sources-heading">
+        <h2 id="sources-heading">Primary sources</h2>
+        <ul>
+        {% for source in page.sources %}
+          <li><a href="{{ source.url | escape }}">{{ source.title | escape }}</a>{% if source.note %}<p>{{ source.note | escape }}</p>{% endif %}</li>
+        {% endfor %}
+        </ul>
+      </aside>
+      {% endif %}
+      <nav class="post-end" aria-label="More writing">
+        <a href="{{ '/' | relative_url }}">Selected work</a>
+        <a href="{{ '/archive/' | relative_url }}">Full archive</a>
+      </nav>
+    </main>
+    {% include footer.html %}
     {%- include bootstrap-js.html -%}
     {%- if site.posthog.token -%}
     <script>
-      // post_viewed — fires when a visitor reads a blog post
-      posthog.capture('post_viewed', {
-        post_title: {{ page.title | jsonify }},
-        post_date: {{ page.date | date: "%Y-%m-%d" | jsonify }},
-        post_categories: {{ page.categories | jsonify }},
-        post_author: {{ page.author | jsonify }},
-        post_url: {{ page.url | jsonify }}
-      });
-
-      // rss_feed_clicked — fires when a visitor clicks the RSS subscribe link
-      document.querySelectorAll('a[href*="feed.xml"]').forEach(function(link) {
-        link.addEventListener('click', function() {
-          posthog.capture('rss_feed_clicked', {
-            post_title: {{ page.title | jsonify }},
-            post_url: {{ page.url | jsonify }}
+      if (window.posthog) {
+        posthog.capture('post_viewed', {
+          post_title: {{ page.title | jsonify }},
+          post_date: {{ page.date | date: '%Y-%m-%d' | jsonify }},
+          post_categories: {{ page.categories | jsonify }},
+          post_author: {{ page.author | jsonify }},
+          post_url: {{ page.url | jsonify }}
+        });
+        document.querySelectorAll('a[href*="feed.xml"]').forEach(function(link) {
+          link.addEventListener('click', function() {
+            posthog.capture('rss_feed_clicked', {post_title: {{ page.title | jsonify }}, post_url: {{ page.url | jsonify }}});
           });
         });
-      });
+      }
     </script>
     {%- endif -%}
   </body>
-
 </html>

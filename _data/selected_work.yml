@@ -1,0 +1,8 @@
+- slug: calibration-is-an-operations-problem
+  description: "How a measured result becomes an institutional claim, and what an editor can do to make that transition visible."
+- slug: report-the-setting
+  description: "A GPT-5 footnote explains why two results on the same benchmark differ. That small disclosure should be standard practice."
+- slug: which-expert-did-you-beat
+  description: "The same models beat one expert baseline and miss another. The choice of comparison can write the headline before anyone reads the results."
+- slug: the-red-team-hour
+  description: "What 380 hours of adversarial testing can tell us about a model's safeguards, and why the definition of a finding changes the arithmetic."

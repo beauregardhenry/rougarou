@@ -5,9 +5,13 @@ description: The Most Honest Number in the GPT-5 System Card, and What It Leaves
 author: Beau Henry
 date: 2026-08-17 09:00:00 -0500
 categories: analysis gpt5 system card red-teaming jailbreaks measurement external-objects
+sources:
+  - title: "OpenAI: GPT-5 System Card, section 5.3.3"
+    url: "https://cdn.openai.com/gpt-5-system-card.pdf#page=51"
+    note: "The API campaign begins on PDF page 51; third-party testing follows on pages 52–53. Section 4 reports total external red-team effort, and section 5.3.5 discusses residual risk."
 ---
 
-There is a number buried in the GPT-5 system card that I haven't been able to stop thinking about.
+There is a number buried in the [GPT-5 system card](https://cdn.openai.com/gpt-5-system-card.pdf#page=51) that I haven't been able to stop thinking about.
 
 OpenAI contracted nineteen red teamers holding biology PhDs to attack the gpt-5-thinking API over a ten-day window. Half had substantial prior experience red teaming OpenAI models through the API; the other half were selected for computational biology backgrounds. They shared a Slack channel so they could build on each other's discoveries. At the end of it, the card reports 46 potential jailbreak reports after approximately 380 hours of total work, which works out to roughly 8.2 red-teamer-hours per report.
 

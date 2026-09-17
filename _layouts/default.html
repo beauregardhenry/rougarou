@@ -1,48 +1,20 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   {%- include head.html -%}
-
   <body>
-    <div class="container-fluid primary-bg-color py-4 mb-3">
-      <div class="container pt-5">
-                        <header class="text-center">
-          <a href="{{ "/" | relative_url }}">
-            <img class="brand-mark" src="{{ "/assets/img/bisou-icon-180.png" | relative_url }}" width="96" height="96" alt="Rougarou">
-          </a>
-          <h1>
-            <a href="{{ "/" | relative_url }}">
-              Faire Rougarou
-            </a>
-          </h1>
-          <h2 class="tagline text-body-secondary">Strong opinions held loosely.</h2>
-          <h2 class="tagline text-body-secondary">Contrarian by nature.</h2>
-          <h2 class="tagline text-body-secondary">Christian humanist by choice.</h2>
-        </header>
-      </div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="primary-bg-color masthead">
+      <header class="container text-center">
+        <a href="{{ '/' | relative_url }}"><img class="brand-mark" src="{{ '/assets/img/bisou-icon-180.png' | relative_url }}" width="64" height="64" alt="Rougarou home"></a>
+        <p class="site-wordmark"><a href="{{ '/' | relative_url }}">Faire Rougarou</a></p>
+        <p class="site-tagline">Strong opinions held loosely.<br>Contrarian by nature. Christian humanist by choice.</p>
+        {% include navigation.html %}
+      </header>
     </div>
-
-    {{ content }}
-    
-    <div class="container-fluid  my-5">
-      <div class="container border-top">
-        <footer class="py-2 my-2">
-          <p class="text-body-secondary">
-            This site feature typefaces Swear, Degular, Compadre, Obviously, and Covik Sans from @ohnotypeco.
-            I love OHNO Type Company fonts more than spicy crawfish and cold beer.
-          </p>
-          <br>
-          <p class="text-body-secondary">
-          <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="beauregard" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/beauregard?trk=profile-badge">Beau Henry</a></div>
-          </p>
-          <br>
-          <p class="text-body-secondary">
-            © 2026 rougarou.io
-          </p>
-        </footer>
-      </div>
-    </div>
+    <main id="main-content" class="container portfolio-content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
     {%- include bootstrap-js.html -%}
   </body>
-
 </html>

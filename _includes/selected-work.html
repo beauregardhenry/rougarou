@@ -1,0 +1,8 @@
+<div class="selected-work">
+  {% for item in site.data.selected_work %}
+    {% assign selected_post = site.posts | where: 'slug', item.slug | first %}
+    {% if selected_post %}
+      {% include post-summary.html post=selected_post description=item.description heading=include.heading %}
+    {% endif %}
+  {% endfor %}
+</div>

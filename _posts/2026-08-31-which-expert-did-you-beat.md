@@ -5,9 +5,13 @@ description: How Expert Baselines Turn Methodological Choices Into Model Claims
 author: Beau Henry
 date: 2026-08-31 09:00:00 -0500
 categories: analysis ai evaluations system cards benchmarks expert baselines measurement methodology
+sources:
+  - title: "OpenAI: GPT-5 System Card, section 5.1.1.4"
+    url: "https://cdn.openai.com/gpt-5-system-card.pdf#page=27"
+    note: "The tacit-knowledge benchmark and its two expert baselines appear on PDF pages 26–27."
 ---
 
-Here are two sentences from the same evaluation, in the same system card, about the same model, on the same benchmark. Both are true.
+Here are two sentences from the same evaluation, in the same [system card](https://cdn.openai.com/gpt-5-system-card.pdf#page=27), about the same model, on the same benchmark. Both are true.
 
 No tested model outperformed the consensus expert baseline.
 
