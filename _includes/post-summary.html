@@ -1,0 +1,12 @@
+<article class="post-summary">
+  <p class="reading-meta"><time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: '%B %-d, %Y' }}</time> · <a href="{{ '/by/' | relative_url }}{{ include.post.author | slugify }}">{{ include.post.author | escape }}</a></p>
+  <h{{ include.heading | default: 2 }}><a href="{{ include.post.url | relative_url }}">{{ include.post.title | escape }}</a></h{{ include.heading | default: 2 }}>
+  {% if include.description %}<p>{{ include.description | escape }}</p>{% elsif include.post.description %}<p>{{ include.post.description | escape }}</p>{% endif %}
+  {% if include.categories %}
+    <ul class="post-topics" aria-label="Topics">
+    {% for category in include.post.categories %}
+      <li><a href="{{ '/category/' | relative_url }}{{ category | slugify }}/">{{ category | remove: ',' | replace: '-', ' ' | escape }}</a></li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+</article>
