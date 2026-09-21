@@ -1,3 +1,37 @@
+---
+layout: post
+title: The Price of an AI Safety Standard
+description: AI safety assessments may become a condition of releasing frontier models. Before that happens, lawmakers should publish the method and the cost of compliance.
+author: Beau Henry
+date: 2026-09-20 09:00:00 -0500
+categories: ai-safety policy regulation competition evaluation
+image: /assets/img/ai-safety-standard-cover.png
+sources:
+  - title: "Anthropic: Claude Opus 5 System Card (July 2026), sections 3.5.1–3.5.2"
+    url: "https://www-cdn.anthropic.com/b514064af1408018e64b1ad24e7d5e75850b4ffd/Claude%20Opus%205%20System%20Card.pdf#page=50"
+    note: "Internal robustness testing and the three external red-team campaigns are reported on PDF pages 50–51."
+
+  - title: "The Ben Shapiro Show: Everything You Need to Know About the AI Wars"
+    url: "https://www.dailywire.com/episode/ben-shapiro-show-ep-2506"
+    note: "Shapiro argues that calls for AI regulation may protect incumbent closed-model companies from competition."
+
+  - title: "OpenAI: The AI Policy Window Is Open. We Need to Act."
+    url: "https://openai.com/index/ai-policy-window/"
+    note: "OpenAI calls for mandatory capability-based federal regulation, independent assessments, and industry-led monitoring standards."
+
+  - title: "Joint Statement on Competition in Generative AI Foundation Models and AI Products"
+    url: "https://www.ftc.gov/system/files/ftc_gov/pdf/ai-joint-statement.pdf"
+    note: "Competition authorities from the United States, United Kingdom, and European Union describe risks from concentrated control of key inputs, distribution, and industry partnerships."
+
+  - title: "International AI Safety Report 2026"
+    url: "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+    note: "The report assesses current capabilities, loss-of-control scenarios, and disagreement about the likelihood and timing of catastrophic harm."
+
+  - title: "Anthropic: Our Position on Open-Weights Models"
+    url: "https://www.anthropic.com/news/position-open-weights-models"
+    note: "Anthropic opposes a blanket ban on open-weight models and supports mandatory safety testing for sufficiently capable open and closed models."
+---
+
 # The Price of an AI Safety Standard
 
 Last week I tried to compare three outside red-team campaigns in [Anthropic’s Claude Opus 5 system card](https://www-cdn.anthropic.com/b514064af1408018e64b1ad24e7d5e75850b4ffd/Claude%20Opus%205%20System%20Card.pdf). Trajectory Labs spent close to 100 hours. 10a Labs reported about 16 hours of manual testing and also used an automated attacker. Grayswan’s effort appears in a different unit: 150 automated attempts per task. The results sit together in the card’s safeguards section, but the reported effort gives readers no common basis for comparing them.
