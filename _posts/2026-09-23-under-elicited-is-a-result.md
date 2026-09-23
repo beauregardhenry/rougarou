@@ -3,7 +3,7 @@ layout: post
 title: Under-Elicited Is a Result
 description: Anthropic called a Claude Opus 4.6 sabotage evaluation under-elicited. Before a low score becomes safety evidence, the test needs a positive control.
 author: Beau Henry
-date: 2026-09-23 09:00:00 -0500
+date: 2026-09-23 08:00:00 -0500
 categories: ai-safety evaluation elicitation sabotage methodology
 image: /assets/img/under-elicited-is-a-result-hero.png
 sources:
