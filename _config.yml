@@ -35,6 +35,13 @@ show_excerpts: true # set to false to remove excerpts on the homepage
 posthog:
   token: "phc_nHbeBN8DywypUuZJxGk2aswVciRXgxymxgv6eKvvS8Cd"
   host: "https://us.i.posthog.com"
+
+# Honeycomb browser observability (page-load traces, Core Web Vitals, JS errors)
+# Set a real API key below to enable. Use a key scoped to "Send Events" only --
+# it will be visible in client-side JS, same as the PostHog token above.
+# See README.md for how to get one and rebuild assets/js/honeycomb.bundle.js.
+honeycomb:
+  api_key: false
 # Build settings
 # theme: minima
 plugins:
@@ -65,3 +72,6 @@ exclude:
   - scripts
   - docs
   - README.md
+  - package.json
+  - package-lock.json
+  - node_modules

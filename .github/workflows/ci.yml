@@ -24,6 +24,14 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - run: npm ci
+      - name: Check the Honeycomb bundle is in sync with its source
+        run: |
+          npm run build:honeycomb
+          git diff --exit-code -- assets/js/honeycomb.bundle.js
       - name: Build the Jekyll site
         run: bundle exec jekyll build --safe --config _config.yml,_config.preview.yml
       - name: Check internal links
