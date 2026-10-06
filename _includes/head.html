@@ -15,4 +15,7 @@
   {%- if site.posthog.token -%}
     {%- include posthog.html -%}
   {%- endif -%}
+  {%- if site.honeycomb.api_key -%}
+    {%- include honeycomb.html -%}
+  {%- endif -%}
 </head>
