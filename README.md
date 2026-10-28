@@ -44,6 +44,14 @@ bundle exec ruby scripts/sync_categories.rb --check
 
 Commit the generated files under `category/` and `categories/`. `/category/<slug>/` is canonical; the plural route redirects there. Categories with the same slug share a page instead of overwriting each other.
 
+To do this automatically, enable the pre-commit hook once per clone:
+
+```sh
+git config core.hooksPath .githooks
+```
+
+Any commit that touches `_posts/` then regenerates the category pages and adds them to the commit. If Ruby or the gems are unavailable, the hook warns and lets the commit through; CI still catches missing pages.
+
 ## Sources and checks
 
 AI analysis posts have a `sources` list in their front matter and links at the relevant passage. `docs/editorial-review.md` records remaining substantive editorial concerns; it is excluded from the website.

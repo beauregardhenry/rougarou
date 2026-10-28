@@ -1,0 +1,19 @@
+#!/bin/sh
+# Regenerates category pages when a commit touches _posts/, so a new
+# category never ships without its page (CI's link check fails otherwise).
+# Enable once per clone: git config core.hooksPath .githooks
+
+git diff --cached --name-only | grep -q '^_posts/' || exit 0
+
+if ! output=$(bundle exec ruby scripts/sync_categories.rb 2>&1); then
+  echo "pre-commit: could not run scripts/sync_categories.rb; skipping." >&2
+  echo "$output" | tail -3 >&2
+  exit 0
+fi
+
+changed=$(git status --porcelain -- category categories | cut -c4-)
+[ -z "$changed" ] && exit 0
+
+git add -- category categories
+echo "pre-commit: added generated category pages to this commit:"
+echo "$changed" | sed 's/^/  /'
