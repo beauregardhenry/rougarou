@@ -1,0 +1,12 @@
+{
+  "name": "rougarou",
+  "private": true,
+  "scripts": {
+    "build:honeycomb": "esbuild scripts/honeycomb/index.js --bundle --minify --platform=browser --target=es2017 --format=iife --outfile=assets/js/honeycomb.bundle.js"
+  },
+  "devDependencies": {
+    "@honeycombio/opentelemetry-web": "^1.5.1",
+    "@opentelemetry/auto-instrumentations-web": "^0.68.0",
+    "esbuild": "^0.28.2"
+  }
+}

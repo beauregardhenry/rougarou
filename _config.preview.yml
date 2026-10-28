@@ -1,3 +1,5 @@
 # Local previews should not send analytics events.
 posthog:
   token: false
+honeycomb:
+  api_key: false
