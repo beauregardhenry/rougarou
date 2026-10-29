@@ -21,8 +21,6 @@ sources:
     note: "Introduces the classification of Claude conversations as automative or augmentative used in the Stanford analysis."
 ---
 
-# You Can't Keep Demanding Experience While Cutting the Jobs That Produce It
-
 A company decides it no longer needs a junior analyst. AI can produce the reports.
 
 Two years later, the same company wants to hire someone who can tell when those reports are wrong.
