@@ -3,7 +3,7 @@ layout: post
 title: More Pull Requests Is Not a Return
 description: Anthropic says auto mode users ship about 25% more pull requests. Before calling that a return on investment, ask what reached customers sooner.
 author: Beau Henry
-date: 2026-11-1312 09:00:00 -0600
+date: 2026-11-13 09:00:00 -0600
 categories: agents measurement software-delivery ai-coding
 image: /assets/img/more-pull-requests-hero.png
 sources:
