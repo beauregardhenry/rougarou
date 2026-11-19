@@ -5,7 +5,6 @@ description: Anthropic says auto mode users ship about 25% more pull requests. B
 author: Beau Henry
 date: 2026-11-13 09:00:00 -0600
 categories: agents measurement software-delivery ai-coding
-image: /assets/img/more-pull-requests-hero.png
 sources:
   - title: "Anthropic: Auto mode is now the default in Claude Code for Pro, Max, and Team plans"
     url: "https://claude.com/blog/auto-mode-default-in-claude-code"
